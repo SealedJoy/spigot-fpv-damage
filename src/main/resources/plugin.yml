@@ -1,0 +1,12 @@
+name: WaterDead
+version: 1.0
+main: org.kelsi.waterdead
+api-version: 1.16
+authors: [ Kelsi ]
+
+commands:
+  wdreload:
+    description: Reload plugin
+    aliases:
+      - wdr
+    usage: /wdr
