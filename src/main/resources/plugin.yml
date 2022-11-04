@@ -2,7 +2,7 @@ name: NoTouch
 version: 1.0
 main: org.sealyj.notouch
 api-version: 1.16
-authors: [ Kelsi ]
+authors: [ SealyJ ]
 
 commands:
   wdreload:
