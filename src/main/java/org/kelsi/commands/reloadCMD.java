@@ -1,4 +1,4 @@
-package org.kelsi.commands;
+package org.sealyj.commands;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -10,7 +10,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class reloadCMD implements CommandExecutor {
 
-    Plugin plugin = Bukkit.getServer().getPluginManager().getPlugin("WaterDead");
+    Plugin plugin = Bukkit.getServer().getPluginManager().getPlugin("NoTouch");
 
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
@@ -20,7 +20,7 @@ public class reloadCMD implements CommandExecutor {
         if (player.hasPermission("wd.reload")) {
             plugin.reloadConfig();
             plugin.saveConfig();
-            player.sendMessage("Plugin has reloaded!");
+            player.sendMessage("FPV Damage Plugin has reloaded!");
         }
         return false;
     }
