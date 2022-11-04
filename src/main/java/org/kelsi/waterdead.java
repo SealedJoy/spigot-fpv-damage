@@ -1,4 +1,4 @@
-package org.kelsi;
+package org.sealyj;
 
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -6,9 +6,9 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.kelsi.commands.reloadCMD;
+import org.sealyj.commands.reloadCMD;
 
-public final class waterdead extends JavaPlugin implements Listener {
+public final class notouch extends JavaPlugin implements Listener {
 
     boolean enabled = getConfig().getBoolean("plugin.enabled");
 
@@ -32,7 +32,7 @@ public final class waterdead extends JavaPlugin implements Listener {
         if (enabled) {
             Material m = event.getPlayer().getLocation().getBlock().getType();
             Player player = event.getPlayer();
-            if (m == Material.WATER) {
+            if (m != Material.AIR) {
                 player.damage(getConfig().getDouble("plugin.damage"));
             }
         }
